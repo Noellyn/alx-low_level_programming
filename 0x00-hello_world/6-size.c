@@ -2,14 +2,15 @@
 
 /**
 *main - prints the size of the various types
-*Return: 0 if exited properly, non-zero otherwise
+*
+*Return: Always 0 (success)
 */
 int main(void)
 {
-printf("size of a char: %d byte(s)\n", (int) sizeof(char));
-printf("size of an int: %d byte(s)\n", (int) sizeof(int));
-printf("size of a long int: %d byte(s)\n", (int) sizeof(long int));
-printf("size of a long long int: %d byte(s)\n", (int) sizeof(long long int));
-printf(stderr, "size of a float: %d byte(s)\n", (int) sizeof(float));
+printf("size of a char: %d byte(s)\n", sizeof(char));
+printf("size of an int: %d byte(s)\n", sizeof(int));
+printf("size of a long int: %d byte(s)\n", sizeof(long int));
+printf("size of a long long int: %d byte(s)\n", sizeof(long long int));
+printf("size of a float: %d byte(s)\n", sizeof(float));
 return (0);
 }
